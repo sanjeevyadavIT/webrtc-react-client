@@ -80,7 +80,7 @@ class VideoChat extends React.Component {
             })
         } else if(this.props.candidate && this.state.receivedCandidateFirstTime) {
             console.log('Setting candidate');
-            this.setRemoteDescription(this.props.candidate);
+            this.addCandidate(this.props.candidate);
         }
     }
 
